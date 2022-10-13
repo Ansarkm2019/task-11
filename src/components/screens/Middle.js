@@ -29,18 +29,18 @@ function Middle() {
                 <FemaleGuestBox>
                     <FemaleGuest>
                         <Fspan>
-                            <Fimg src={require("../../assets/images/white_icon.svg").default} />
+                            <Fimg src={require("../../assets/images/white_icon2.svg").default} />
                         </Fspan>
                         <Femaleh4>Male Guest</Femaleh4>
                     </FemaleGuest>
                     <CountBox>
                         <Lcount>
                             <Tname>Total invites</Tname>
-                            <TotalInvitF>8,124</TotalInvitF>
+                            <TotalInvitF>9,620</TotalInvitF>
                         </Lcount>
                         <Rcount>
                             <Tname>Total Come</Tname>
-                            <TotalComeF>4,204</TotalComeF>
+                            <TotalComeF>6,125</TotalComeF>
                         </Rcount>
                     </CountBox>
                 </FemaleGuestBox>
@@ -48,9 +48,12 @@ function Middle() {
 
                 <Traffic>
                     <TrafficH4>Visitor traffic</TrafficH4>
-                    <TrafficImg />
+                    <TrafficImgBox>
+                        <TrafficImg src={require("../../assets/images/Group3465418.svg").default} />
+                    </TrafficImgBox>
                 </Traffic>
             </TopCantainer>
+            dfgh
         </Spotlight>
     </>
   )
@@ -72,9 +75,9 @@ const TopCantainer = styled.section`
     justify-content: space-between; 
 `;
 const MaleGuestBox = styled.section`
-    width: 25%;
+    width: 35%;
     background-color: #A5E3E3;
-    padding: 30px;
+    padding: 50px;
     border-radius: 20px;
 `;
 const MaleGuest = styled.section`
@@ -86,14 +89,14 @@ const Mspan = styled.span`
     padding: 15px;
     display: inline-block;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 40px;
 
 `;
 const Mimg = styled.img``;
 const Maleh4 = styled.h4`
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
-    font-weight: bold;`
+    font-weight: 500;`
 ;
 const CountBox = styled.div`
     display: flex;
@@ -105,9 +108,11 @@ const Lcount = styled.div`
     width: 50%;
     border-right: 1px solid #000;
 `;
-const Tname = styled.p``;
+const Tname = styled.p`
+    font-size: 20px;
+`;
 const TotalInvitM = styled.h5`
-    font-size: 15px;
+    font-size: 45px;
     color: #000;
     font-weight: bold;
 `;
@@ -115,19 +120,16 @@ const Rcount = styled.div`
     width: 40%;
 `;
 const TotalComeM = styled.h5`
-    font-size: 15px;
+    font-size: 45px;
     color: #000;
     font-weight: bold;
 `;
 
 
-
-
-
 const FemaleGuestBox = styled.section`
-    width: 25%;
+    width: 35%;
     background-color: #D2A2F7;
-    padding: 30px;
+    padding: 50px;
     border-radius: 20px;
 `;
 const FemaleGuest = styled.section`
@@ -139,25 +141,25 @@ const Fspan = styled.span`
     padding: 15px;
     display: inline-block;
     border-radius: 30px;
-    margin-right: 20px;
+    margin-right: 40px;
 
 `;
 const Fimg = styled.img``;
 const Femaleh4 = styled.h4`
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
-    font-weight: bold;`
-;
+    font-weight: 500;
+`;
 
 
 const TotalInvitF = styled.h5`
-    font-size: 15px;
+    font-size: 45px;
     color: #000;
     font-weight: bold;
 `;
 
 const TotalComeF = styled.h5`
-    font-size: 15px;
+    font-size: 45px;
     color: #000;
     font-weight: bold;
 `;
@@ -168,9 +170,19 @@ const TotalComeF = styled.h5`
 
 
 const Traffic = styled.section`
-    width: 20%;   
+    background-color: #fff;
+    width: 18%;
+    border-radius: 20px;
 `;
-const TrafficH4 = styled.h4``;
+const TrafficH4 = styled.h4`
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 25px;
+`;
+const TrafficImgBox = styled.div``;
 const TrafficImg = styled.img``;
 
 
