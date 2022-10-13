@@ -53,7 +53,18 @@ function Middle() {
                     </TrafficImgBox>
                 </Traffic>
             </TopCantainer>
-            dfgh
+
+
+            <More>
+                <MoreRight>
+                    <Mh6>Recently Guest</Mh6>
+                    <A href="" >See more</A>
+                </MoreRight>
+                <MoreLeft>
+                    <Mh6>Guest Traffic</Mh6>
+                    <A href="" >See more</A>
+                </MoreLeft>
+            </More>
         </Spotlight>
     </>
   )
@@ -166,9 +177,6 @@ const TotalComeF = styled.h5`
 
 
 
-
-
-
 const Traffic = styled.section`
     background-color: #fff;
     width: 18%;
@@ -185,5 +193,34 @@ const TrafficH4 = styled.h4`
 const TrafficImgBox = styled.div``;
 const TrafficImg = styled.img``;
 
+
+const More = styled.section`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+`;
+const MoreRight = styled.div`
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+
+`;
+const MoreLeft = styled.div`
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+`;
+const Mh6 = styled.h6`
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+`;
+const A = styled.a`
+    font-weight: 500;
+    font-size: 15px;
+    color: #8D8989;
+`;
 
 
