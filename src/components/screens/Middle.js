@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Graph from './Graph';
+import Grapht from './Grapht';
 import Guestlist from './Guestlist';
 
 function Middle() {
@@ -33,7 +33,7 @@ function Middle() {
                         <Fspan>
                             <Fimg src={require("../../assets/images/white_icon2.svg").default} />
                         </Fspan>
-                        <Femaleh4>Male Guest</Femaleh4>
+                        <Femaleh4>Female Guest</Femaleh4>
                     </FemaleGuest>
                     <CountBox>
                         <Lcount>
@@ -70,7 +70,7 @@ function Middle() {
 
             <Container2>
                 <Guestlist />
-                <Graph />
+                <Grapht />
             </Container2>
 
         </Spotlight>
