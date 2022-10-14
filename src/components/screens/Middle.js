@@ -68,8 +68,10 @@ function Middle() {
                 </MoreLeft>
             </More>
 
-            <Guestlist />
-            <Graph />
+            <Container2>
+                <Guestlist />
+                <Graph />
+            </Container2>
 
         </Spotlight>
     </>
@@ -92,7 +94,7 @@ const TopCantainer = styled.section`
     justify-content: space-between; 
 `;
 const MaleGuestBox = styled.section`
-    width: 35%;
+    width: 40%;
     background-color: #A5E3E3;
     padding: 50px;
     border-radius: 20px;
@@ -144,7 +146,7 @@ const TotalComeM = styled.h5`
 
 
 const FemaleGuestBox = styled.section`
-    width: 35%;
+    width: 38%;
     background-color: #D2A2F7;
     padding: 50px;
     border-radius: 20px;
@@ -213,7 +215,7 @@ const MoreRight = styled.div`
 
 `;
 const MoreLeft = styled.div`
-    width: 48%;
+    width: 57%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,3 +232,7 @@ const A = styled.a`
 `;
 
 
+const Container2 =styled.section`
+    display: flex;
+    justify-content: space-between;
+`;

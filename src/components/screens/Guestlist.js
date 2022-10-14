@@ -8,7 +8,6 @@ function Guestlist() {
     <>
         <GuestListContainer>
             <GuestList>
-
                 <GuestLeft>
                     <GuestPicSpan>
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
@@ -32,10 +31,55 @@ function Guestlist() {
                 </GuestRight>
             </GuestList>
 
-            <GuestList></GuestList>
-            <GuestList></GuestList>
-            <GuestList></GuestList>
+            <GuestList>
+                <GuestLeft>
+                    <GuestPicSpan>
+                        <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
+                    </GuestPicSpan>
+                    <GuestNameDiv>
+                        <GuestNameInput type={"text"} value={"Aisyah Namanya"} />
+                        <GuestTimeP>2 minute ago</GuestTimeP>
+                    </GuestNameDiv>
+                </GuestLeft>
+
+                <GuestRight className={"click"} >
+                    <EditSpan>
+                        <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
+                    </EditSpan>
+                    <DeleteSpan>
+                        <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
+                    </DeleteSpan>
+                    <DotsSpan>
+                        <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
+                    </DotsSpan>
+                </GuestRight>
+            </GuestList>
+
+            <GuestList>
+                <GuestLeft>
+                    <GuestPicSpan>
+                        <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
+                    </GuestPicSpan>
+                    <GuestNameDiv>
+                        <GuestNameInput type={"text"} value={"Aisyah Namanya"} />
+                        <GuestTimeP>2 minute ago</GuestTimeP>
+                    </GuestNameDiv>
+                </GuestLeft>
+
+                <GuestRight className={"click"} >
+                    <EditSpan>
+                        <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
+                    </EditSpan>
+                    <DeleteSpan>
+                        <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
+                    </DeleteSpan>
+                    <DotsSpan>
+                        <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
+                    </DotsSpan>
+                </GuestRight>
+            </GuestList>
         </GuestListContainer>
+        
     </>
   )
 }
