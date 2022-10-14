@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Graph from './Graph';
+import Guestlist from './Guestlist';
 
 function Middle() {
   return (
@@ -65,6 +67,10 @@ function Middle() {
                     <A href="" >See more</A>
                 </MoreLeft>
             </More>
+
+            <Guestlist />
+            <Graph />
+
         </Spotlight>
     </>
   )
@@ -203,14 +209,14 @@ const MoreRight = styled.div`
     width: 35%;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 
 `;
 const MoreLeft = styled.div`
     width: 48%;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 `;
 const Mh6 = styled.h6`
     font-size: 30px;

@@ -10,6 +10,7 @@ function Vorgez() {
             <Header />
             <Middle />
         </Main>
+        
 
     </>
   )
