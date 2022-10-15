@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
@@ -19,7 +20,7 @@ function Header() {
                         <TopA href="">Guestlist</TopA>
                     </TopLi>
                     <TopLi>
-                        <TopA href="">Temporary traffic</TopA>
+                        <TopA to="/graph">Temporary traffic</TopA>
                     </TopLi>
                 </TopUl>
                 <RightDiv>
@@ -123,7 +124,7 @@ const TopUl = styled.ul`
 const TopLi = styled.li`
 
 `;
-const TopA = styled.a`
+const TopA = styled(Link)`
     font-size: 20px;
     font-weight: normal;
     color: #8D8989;
@@ -163,7 +164,7 @@ const Span2img = styled.img`
 const SideContainer = styled.section`
     width: 18%;
     padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 70px;
 `;
 const SideBox = styled.section``;
 

@@ -135,3 +135,16 @@ br.clear {
 /* div.click-active {
   background: yellow;
 } */
+
+
+.color1 {
+  background-color: #fff;
+}
+
+.coloractive {
+  background-color: #D2A2F7;
+}
+
+.hide {
+  display: none;
+}

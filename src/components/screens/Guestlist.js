@@ -4,10 +4,24 @@ import "../../App.css"
 
 
 function Guestlist() {
+    window.addEventListener = ("load", (event) => {
+        document.getElementById("show_hide1").addEventListener("click", () => {
+            document.querySelector("li.color").classList.toggle("coloractive");
+            // document.getElementsByClassName("show").classList.addClass("hide");
+        });
+        document.getElementById("show_hide2").addEventListener("click", () => {
+            document.querySelector("li.color2").classList.toggle("coloractive");
+            // document.getElementsByClassName("show").classList.addClass("hide");
+        });
+        document.getElementById("show_hide3").addEventListener("click", () => {
+            document.querySelector("li.color3").classList.toggle("coloractive");
+            // document.getElementsByClassName("show").classList.addClass("hide");
+        });
+    });
   return (
     <>
         <GuestListContainer>
-            <GuestList>
+            <GuestList className="color1 color">
                 <GuestLeft>
                     <GuestPicSpan>
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
@@ -18,20 +32,20 @@ function Guestlist() {
                     </GuestNameDiv>
                 </GuestLeft>
 
-                <GuestRight className={"click"} >
+                <GuestRight className="click" >
                     <EditSpan>
                         <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
                     </EditSpan>
                     <DeleteSpan>
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
-                    <DotsSpan>
+                    <DotsSpan id="show_hide1" className="show">
                         <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
                     </DotsSpan>
                 </GuestRight>
             </GuestList>
 
-            <GuestList>
+            <GuestList className="color1 color2">
                 <GuestLeft>
                     <GuestPicSpan>
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
@@ -49,13 +63,13 @@ function Guestlist() {
                     <DeleteSpan>
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
-                    <DotsSpan>
+                    <DotsSpan id="show_hide2" className="show">
                         <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
                     </DotsSpan>
                 </GuestRight>
             </GuestList>
 
-            <GuestList>
+            <GuestList className="color1 color3">
                 <GuestLeft>
                     <GuestPicSpan>
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
@@ -73,7 +87,7 @@ function Guestlist() {
                     <DeleteSpan>
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
-                    <DotsSpan>
+                    <DotsSpan id="show_hide3" className="show">
                         <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
                     </DotsSpan>
                 </GuestRight>
@@ -92,15 +106,16 @@ const GuestListContainer = styled.ul`
 
 `;
 const GuestList = styled.li`
-    background-color: #fff;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D2A2F7;
     margin-bottom: 15px;
     &:last-child{
         margin-bottom: 0;
+    }
+    :hover{
+        box-shadow: 3px 5px 20px 10px #d1d1d1;
     }
 `;
 
