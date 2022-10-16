@@ -119,6 +119,9 @@ const GraphContainer = styled.section`
 	@media all and (max-width: 1080px){
 		width: 85%;
 	}
+	@media all and (max-width: 980px){
+		background: #F9F8F8;
+	}
 `;
 const Charth3 =styled.h3`
 	display: none;

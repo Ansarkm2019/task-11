@@ -88,6 +88,9 @@ const Spotlight = styled.section`
     @media all and (max-width: 1080px){
         width: 80%;
     }
+    @media all and (max-width: 980px){
+        width: 75%;
+    }
 `;
 
 

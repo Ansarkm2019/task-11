@@ -121,6 +121,9 @@ const TopCantainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 75%;
+    @media all and (max-width: 980px){
+        width: 69%;
+    }
 `;
 const TopUl = styled.ul`
     display: flex;
@@ -131,6 +134,9 @@ const TopUl = styled.ul`
     }
     @media all and (max-width: 1080px){
         width: 60%;
+    }
+    @media all and (max-width: 980px){
+        width: 75%;
     }
 `;
 const TopLi = styled.li`
@@ -153,6 +159,9 @@ const RightDiv = styled.div`
     align-items: center;
     @media all and (max-width: 1280px){
         width: 15%;
+    }
+    @media all and (max-width: 980px){
+        width: 20%;
     }
 
 `;
@@ -195,6 +204,9 @@ const SideContainer = styled.section`
     @media all and (max-width: 1080px){
         padding-left: 20px;
         width: 20%;
+    }
+    @media all and (max-width: 980px){
+        width: 25%;
     }
 `;
 const SideBox = styled.section``;

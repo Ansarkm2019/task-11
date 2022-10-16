@@ -95,6 +95,9 @@ const GuestListContainer = styled.ul`
     @media all and (max-width: 1080px){
         width: 65%;
     }
+    @media all and (max-width: 980px){
+        width: 75%;
+    }
 `;
 const GuestList = styled.li`
     border-radius: 20px;
