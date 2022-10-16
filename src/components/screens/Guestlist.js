@@ -90,7 +90,7 @@ function Guestlist() {
 export default Guestlist
 
 const GuestListContainer = styled.ul`
-    width: 40%;
+    width: 36%;
     margin-top: 30px;
 
 `;
@@ -118,6 +118,9 @@ const GuestLeft = styled.div`
     padding: 35px 0 35px 30px;
     border-radius: 17px;
     background-color: #fff;
+    @media all and (max-width: 1280px){
+        padding-left: 15px;
+    }
 `;
 const GuestPicSpan = styled.span`
     display: inline-block;

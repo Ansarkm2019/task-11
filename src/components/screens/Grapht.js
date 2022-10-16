@@ -110,15 +110,18 @@ export default function Grapht() {
 }
 
 const GraphContainer = styled.section`
-    width: 57%;
+    width: 63%;
     margin-top: 35px;
     background-color: #fff;
 	border-radius: 20px;
-	text-align: center
+	text-align: center;
 `;
 const BarChartBox = styled.section`
     width: 90%;
     margin: 0 auto;
+	@media all and (max-width: 1280px){
+		width: 95%;
+	}
 `;
 
 const GraphHead = styled.section`
@@ -130,6 +133,10 @@ const GraphHead = styled.section`
 const GuestTop = styled.section`
 	display: flex;
 	align-items: center;
+	@media all and (max-width: 1280px){
+		flex-direction: column;
+		align-items: flex-start;
+	}
 `;
 const TotalDiv = styled.div`
 	display: flex;
@@ -137,6 +144,13 @@ const TotalDiv = styled.div`
 	margin-right: 20px;
 	&:last-child{
 		margin-right: 0;
+	}
+	@media all and (max-width: 1280px){
+		margin-right: 0;
+		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 `;
 const Tbox = styled.span`

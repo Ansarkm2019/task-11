@@ -33,6 +33,7 @@ function Header() {
                         <Span2img src={require("../../assets/images/rectangle_20695.jpg")} />
                     </Span2>
                 </RightDiv>
+
                 <Burger>
                     <Burgerimg src={require("../../assets/images/icon-menu.png")} />
                 </Burger>
@@ -125,6 +126,9 @@ const TopUl = styled.ul`
     display: flex;
     justify-content: space-between;
     width: 45%;
+    @media all and (max-width: 1380px){
+        width: 50%;
+    }
 `;
 const TopLi = styled.li`
 
@@ -144,6 +148,10 @@ const RightDiv = styled.div`
     width: 12%;
     justify-content: space-between;
     align-items: center;
+    @media all and (max-width: 1280px){
+        width: 15%;
+    }
+
 `;
 const Span1 = styled.span`
     display: inline-block;
@@ -178,6 +186,9 @@ const SideContainer = styled.section`
     width: 18%;
     padding-left: 30px;
     padding-top: 70px;
+    @media all and (max-width: 1280px){
+        padding-left: 15px;
+    }
 `;
 const SideBox = styled.section``;
 

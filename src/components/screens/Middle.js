@@ -82,7 +82,7 @@ export default Middle;
 
 const Spotlight = styled.section`
     background-color: #F9F8F8;
-    padding: 40px;
+    padding: 30px;
     width: 82%;
     margin-top: 10px;
 
@@ -96,7 +96,7 @@ const TopCantainer = styled.section`
 const MaleGuestBox = styled.section`
     width: 40%;
     background-color: #A5E3E3;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
 `;
 const MaleGuest = styled.section`
@@ -108,7 +108,7 @@ const Mspan = styled.span`
     padding: 15px;
     display: inline-block;
     border-radius: 30px;
-    margin-right: 40px;
+    margin-right: 20px;
 
 `;
 const Mimg = styled.img``;
@@ -131,7 +131,7 @@ const Tname = styled.p`
     font-size: 20px;
 `;
 const TotalInvitM = styled.h5`
-    font-size: 45px;
+    font-size: 35px;
     color: #000;
     font-weight: bold;
 `;
@@ -139,16 +139,16 @@ const Rcount = styled.div`
     width: 40%;
 `;
 const TotalComeM = styled.h5`
-    font-size: 45px;
+    font-size: 35px;
     color: #000;
     font-weight: bold;
 `;
 
 
 const FemaleGuestBox = styled.section`
-    width: 38%;
+    width: 40%;
     background-color: #D2A2F7;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
 `;
 const FemaleGuest = styled.section`
@@ -160,7 +160,7 @@ const Fspan = styled.span`
     padding: 15px;
     display: inline-block;
     border-radius: 30px;
-    margin-right: 40px;
+    margin-right: 20px;
 
 `;
 const Fimg = styled.img``;
@@ -172,13 +172,13 @@ const Femaleh4 = styled.h4`
 
 
 const TotalInvitF = styled.h5`
-    font-size: 45px;
+    font-size: 35px;
     color: #000;
     font-weight: bold;
 `;
 
 const TotalComeF = styled.h5`
-    font-size: 45px;
+    font-size: 35px;
     color: #000;
     font-weight: bold;
 `;
@@ -199,7 +199,10 @@ const TrafficH4 = styled.h4`
     top: 25px;
 `;
 const TrafficImgBox = styled.div``;
-const TrafficImg = styled.img``;
+const TrafficImg = styled.img`
+    display: block;
+    width: 100%;
+`;
 
 
 const More = styled.section`
@@ -221,7 +224,7 @@ const MoreLeft = styled.div`
     align-items: center;
 `;
 const Mh6 = styled.h6`
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     font-weight: 500;
 `;
