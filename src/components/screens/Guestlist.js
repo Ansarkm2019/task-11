@@ -1,45 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import "../../App.css"
 
 
+
 function Guestlist() {
-    window.addEventListener = ("load", (event) => {
-        document.getElementById("show_hide1").addEventListener("click", () => {
-            document.querySelector("li.color").classList.toggle("coloractive");
-            // document.getElementsByClassName("show").classList.addClass("hide");
-        });
-        document.getElementById("show_hide2").addEventListener("click", () => {
-            document.querySelector("li.color2").classList.toggle("coloractive");
-            // document.getElementsByClassName("show").classList.addClass("hide");
-        });
-        document.getElementById("show_hide3").addEventListener("click", () => {
-            document.querySelector("li.color3").classList.toggle("coloractive");
-            // document.getElementsByClassName("show").classList.addClass("hide");
-        });
-    });
+        
+        const [name, setname] = useState({name: "Aisyah Namanya", name2: "Cak Handoko"})
   return (
     <>
         <GuestListContainer>
-            <GuestList className="color1 color">
+            <GuestList className="color1">
                 <GuestLeft>
                     <GuestPicSpan>
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
                     </GuestPicSpan>
                     <GuestNameDiv>
-                        <GuestNameInput type={"text"} value={"Aisyah Namanya"} />
+                        <GuestNameInput type="text" value={name.name} onChange={(e)=> setname(e.target.value)} />
                         <GuestTimeP>2 minute ago</GuestTimeP>
                     </GuestNameDiv>
                 </GuestLeft>
 
                 <GuestRight className="click" >
-                    <EditSpan>
+                    <EditSpan className="h">
                         <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
                     </EditSpan>
-                    <DeleteSpan>
+                    <DeleteSpan className="h">
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
-                    <DotsSpan id="show_hide1" className="show">
+                    <DotsSpan id="show_hide1" className="show" >
                         <DotsImg src={require("../../assets/images/bi_three_dots_vertical.svg").default} />
                     </DotsSpan>
                 </GuestRight>
@@ -48,19 +37,19 @@ function Guestlist() {
             <GuestList className="color1 color2">
                 <GuestLeft>
                     <GuestPicSpan>
-                        <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
+                        <GuestPic src={require("../../assets/images/rectangle_20696.jpg")} />
                     </GuestPicSpan>
                     <GuestNameDiv>
-                        <GuestNameInput type={"text"} value={"Aisyah Namanya"} />
+                        <GuestNameInput type="text" value={name.name2} onChange={(e)=> setname(e.target.value)} />
                         <GuestTimeP>2 minute ago</GuestTimeP>
                     </GuestNameDiv>
                 </GuestLeft>
 
                 <GuestRight className={"click"} >
-                    <EditSpan>
+                    <EditSpan className="h">
                         <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
                     </EditSpan>
-                    <DeleteSpan>
+                    <DeleteSpan className="h">
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
                     <DotsSpan id="show_hide2" className="show">
@@ -75,16 +64,16 @@ function Guestlist() {
                         <GuestPic src={require("../../assets/images/rectangle_20695.jpg")} />
                     </GuestPicSpan>
                     <GuestNameDiv>
-                        <GuestNameInput type={"text"} value={"Aisyah Namanya"} />
+                        <GuestNameInput type="text" value={name.name} onChange={(e)=> setname(e.target.value)} />
                         <GuestTimeP>2 minute ago</GuestTimeP>
                     </GuestNameDiv>
                 </GuestLeft>
 
                 <GuestRight className={"click"} >
-                    <EditSpan>
+                    <EditSpan className="h">
                         <Editimg src={require("../../assets/images/fa_solid_pen.svg").default} />
                     </EditSpan>
-                    <DeleteSpan>
+                    <DeleteSpan className="h">
                         <DeleteImg src={require("../../assets/images/bxs_trash_alt.svg").default} />
                     </DeleteSpan>
                     <DotsSpan id="show_hide3" className="show">
@@ -116,6 +105,7 @@ const GuestList = styled.li`
     }
     :hover{
         box-shadow: 3px 5px 20px 10px #d1d1d1;
+        background-color: #D2A2F7;
     }
 `;
 

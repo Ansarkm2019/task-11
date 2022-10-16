@@ -5,7 +5,8 @@ import {
  Routes,
   Route,
 } from "react-router-dom";
-import Grapht from './components/screens/Grapht';
+import Graphpage from './components/Pages/Graphpage';
+import Guestpagelist from './components/Pages/Guestpagelist';
 
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
         <Route path="/" element={<Vorgez />}/>
       </Routes>
       <Routes>
-        <Route path="/graph" element={<Grapht />}/>
+        <Route path="/graph" element={<Graphpage />}/>
+      </Routes>
+      <Routes>
+        <Route path="/guestlist" element={<Guestpagelist />}/>
       </Routes>
     
     </Router>

@@ -14,10 +14,10 @@ function Header() {
             <TopCantainer>
                 <TopUl>
                     <TopLi>
-                        <TopA href="">Overview</TopA>
+                        <TopA to="/">Overview</TopA>
                     </TopLi>
                     <TopLi>
-                        <TopA href="">Guestlist</TopA>
+                        <TopA to="/guestlist">Guestlist</TopA>
                     </TopLi>
                     <TopLi>
                         <TopA to="/graph">Temporary traffic</TopA>
@@ -42,7 +42,7 @@ function Header() {
                         <Micon>
                             <MenuImage src={require("../../assets/images/akar_icons_dashboard.svg").default} />
                         </Micon>
-                        <MenuH6>Dashboard</MenuH6>
+                        <MenuH6 to="/" >Dashboard</MenuH6>
                     </MenuLi>
                     <MenuLi>
                         <Micon>
@@ -192,7 +192,7 @@ const MenuImage = styled.img`
     width: 100%;
     display: block;
 `;
-const MenuH6 = styled.h6`
+const MenuH6 = styled(Link)`
     margin: 0;
     font-size: 15px;
     &:hover{

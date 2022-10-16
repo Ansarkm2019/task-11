@@ -15,43 +15,43 @@ import {
 const data = [
   {
     name: "Page A",
-    Female_Guest: 500,
-    Male_Guest: 510,
+    Female_Guest: 300,
+    Male_Guest: 310,
     Total_Guest: 1600,
     amt: 2400
   },
   {
     name: "Page B",
-    Female_Guest: 500,
-    Male_Guest: 495,
+    Female_Guest: 290,
+    Male_Guest: 195,
     Total_Guest: 2098,
     amt: 2210
   },
   {
     name: "Page C",
-    Female_Guest: 500,
-    Male_Guest: 530,
+    Female_Guest: 250,
+    Male_Guest: 230,
     Total_Guest: 2600,
     amt: 2290
   },
   {
     name: "Page D",
-    Female_Guest: 500,
-    Male_Guest: 490,
+    Female_Guest: 310,
+    Male_Guest: 290,
     Total_Guest: 3408,
     amt: 2000
   },
   {
     name: "Page E",
-    Female_Guest: 500,
-    Male_Guest: 560,
+    Female_Guest: 240,
+    Male_Guest: 260,
     Total_Guest: 2000,
     amt: 2181
   },
   {
     name: "Page F",
-    Female_Guest: 500,
-    Male_Guest: 590,
+    Female_Guest: 275,
+    Male_Guest: 290,
     Total_Guest: 2900,
     amt: 2500
   }
