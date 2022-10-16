@@ -129,6 +129,9 @@ const TopUl = styled.ul`
     @media all and (max-width: 1380px){
         width: 50%;
     }
+    @media all and (max-width: 1080px){
+        width: 60%;
+    }
 `;
 const TopLi = styled.li`
 
@@ -188,6 +191,10 @@ const SideContainer = styled.section`
     padding-top: 70px;
     @media all and (max-width: 1280px){
         padding-left: 15px;
+    }
+    @media all and (max-width: 1080px){
+        padding-left: 20px;
+        width: 20%;
     }
 `;
 const SideBox = styled.section``;

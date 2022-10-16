@@ -92,7 +92,9 @@ export default Guestlist
 const GuestListContainer = styled.ul`
     width: 36%;
     margin-top: 30px;
-
+    @media all and (max-width: 1080px){
+        width: 65%;
+    }
 `;
 const GuestList = styled.li`
     border-radius: 20px;
@@ -107,6 +109,9 @@ const GuestList = styled.li`
         box-shadow: 3px 5px 20px 10px #d1d1d1;
         background-color: #D2A2F7;
     }
+    @media all and (max-width: 1280px){
+        margin-bottom: 25px;
+    }
 `;
 
 
@@ -120,6 +125,8 @@ const GuestLeft = styled.div`
     background-color: #fff;
     @media all and (max-width: 1280px){
         padding-left: 15px;
+        justify-content: flex-start;
+        width: 85%;
     }
 `;
 const GuestPicSpan = styled.span`
@@ -132,7 +139,9 @@ const GuestPic = styled.img`
     display: block;
     border-radius: 30px;
 `;
-const GuestNameDiv = styled.div``;
+const GuestNameDiv = styled.div`
+    width: 70%;
+`;
 const GuestNameInput = styled.input`
     font-size: 16px;
     font-weight: bold;
@@ -149,6 +158,12 @@ const GuestRight = styled.div`
 `;
 const EditSpan = styled.span`
     margin-right: 10px;
+    @media all and (max-width: 1380px){
+        display: none;
+    }
+    @media all and (max-width: 1080px){
+        display: block;
+    }
 `;
 const Editimg = styled.img`
     width: 100%;
@@ -156,6 +171,12 @@ const Editimg = styled.img`
 `;
 const DeleteSpan = styled.span`
     margin-right: 10px;
+    @media all and (max-width: 1380px){
+        display: none;
+    }
+    @media all and (max-width: 1080px){
+        display: block;
+    }
 `;
 const DeleteImg = styled.img`
     width: 100%;
@@ -163,6 +184,9 @@ const DeleteImg = styled.img`
 `;
 const DotsSpan = styled.span`
     margin-right: 10px;
+    @media all and (max-width: 1380px){
+        width: 30px;
+    }
 `;
 const DotsImg = styled.img`
     width: 100%;

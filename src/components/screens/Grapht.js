@@ -63,6 +63,7 @@ export default function Grapht() {
 
     <GraphContainer>
         <BarChartBox>
+			<Charth3>Guest Traffic</Charth3>
 			<GraphHead>
 				<GuestTop>
 					<TotalDiv>
@@ -115,6 +116,17 @@ const GraphContainer = styled.section`
     background-color: #fff;
 	border-radius: 20px;
 	text-align: center;
+	@media all and (max-width: 1080px){
+		width: 85%;
+	}
+`;
+const Charth3 =styled.h3`
+	display: none;
+	@media all and (max-width: 1080px){
+		display: block;
+		font-size: 25px;
+		font-weight: bold;
+	}
 `;
 const BarChartBox = styled.section`
     width: 90%;
