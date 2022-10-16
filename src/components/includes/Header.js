@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
 
+
 function Header() {
   return (
     <>
@@ -23,6 +24,7 @@ function Header() {
                         <TopA to="/graph">Temporary traffic</TopA>
                     </TopLi>
                 </TopUl>
+
                 <RightDiv>
                     <Span1>
                         <Span1img src={require("../../assets/images/bxs_bell.svg").default} />
@@ -31,6 +33,9 @@ function Header() {
                         <Span2img src={require("../../assets/images/rectangle_20695.jpg")} />
                     </Span2>
                 </RightDiv>
+                <Burger>
+                    <Burgerimg src={require("../../assets/images/icon-menu.png")} />
+                </Burger>
             </TopCantainer>
         </HeaderTag>
 
@@ -159,6 +164,14 @@ const Span2img = styled.img`
     border-radius: 30px;
 `;
 
+const Burger = styled.span`
+    display: none;
+    width: 35px;
+`;
+const Burgerimg = styled.img`
+    width: 100%;
+    display: block;
+`;
 
 
 const SideContainer = styled.section`
