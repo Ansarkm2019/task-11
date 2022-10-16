@@ -91,6 +91,15 @@ const Spotlight = styled.section`
     @media all and (max-width: 980px){
         width: 75%;
     }
+    @media all and (max-width: 768px){
+        width: 70%;
+    }
+    @media all and (max-width: 640px){
+        padding: 10px;
+    }
+    @media all and (max-width: 640px){
+        width: 100%;
+    }
 `;
 
 
@@ -107,6 +116,12 @@ const MaleGuestBox = styled.section`
     border-radius: 20px;
     @media all and (max-width: 1080px){
         margin-bottom: 20px;
+    }
+    @media all and (max-width: 768px){
+        width: 80%;
+    }
+    @media all and (max-width: 768px){
+        width: 90%;
     }
 `;
 const MaleGuest = styled.section`
@@ -163,6 +178,12 @@ const FemaleGuestBox = styled.section`
     @media all and (max-width: 1080px){
         margin-bottom: 20px;
     }
+    @media all and (max-width: 768px){
+        width: 80%;
+    }
+    @media all and (max-width: 768px){
+        width: 90%;
+    }
 `;
 const FemaleGuest = styled.section`
     display: flex;
@@ -202,6 +223,9 @@ const Traffic = styled.section`
     background-color: #fff;
     width: 35%;
     border-radius: 20px;
+    @media all and (max-width: 768px){
+        width: 50%;
+    }
 `;
 const TrafficH4 = styled.h4`
     font-size: 20px;
@@ -210,6 +234,7 @@ const TrafficH4 = styled.h4`
     text-align: center;
     position: relative;
     top: 25px;
+    
 `;
 const TrafficImgBox = styled.div``;
 const TrafficImg = styled.img`

@@ -109,6 +109,10 @@ const HeaderTag = styled.header`
     width: 95%;
     margin: 0 auto;
     height: 120px;
+    @media all and (max-width: 640px){
+        margin-left: 100px;
+        margin-right: 15px;
+    }
 `;
 const LogoContainer = styled.h1``;
 const LogoA = styled.a``;
@@ -124,6 +128,12 @@ const TopCantainer = styled.div`
     @media all and (max-width: 980px){
         width: 69%;
     }
+    @media all and (max-width: 768px){
+        justify-content: flex-end;
+    }
+    @media all and (max-width: 640px){
+        width: 15%;
+    }
 `;
 const TopUl = styled.ul`
     display: flex;
@@ -137,6 +147,9 @@ const TopUl = styled.ul`
     }
     @media all and (max-width: 980px){
         width: 75%;
+    }
+    @media all and (max-width: 768px){
+        display: none;
     }
 `;
 const TopLi = styled.li`
@@ -163,6 +176,9 @@ const RightDiv = styled.div`
     @media all and (max-width: 980px){
         width: 20%;
     }
+    @media all and (max-width: 640px){
+        display: none;
+    }
 
 `;
 const Span1 = styled.span`
@@ -187,6 +203,9 @@ const Span2img = styled.img`
 const Burger = styled.span`
     display: none;
     width: 35px;
+    @media all and (max-width: 640px){
+        display: block;
+    }
 `;
 const Burgerimg = styled.img`
     width: 100%;
@@ -207,6 +226,14 @@ const SideContainer = styled.section`
     }
     @media all and (max-width: 980px){
         width: 25%;
+    }
+    @media all and (max-width: 768px){
+        width: 30%;
+        background-color: #F9F8F8;
+        margin-top: 10px;
+    }
+    @media all and (max-width: 640px){
+        display: none;
     }
 `;
 const SideBox = styled.section``;

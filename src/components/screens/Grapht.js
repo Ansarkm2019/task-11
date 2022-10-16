@@ -122,6 +122,9 @@ const GraphContainer = styled.section`
 	@media all and (max-width: 980px){
 		background: #F9F8F8;
 	}
+	@media all and (max-width: 640px){
+		width: 70%;
+	}
 `;
 const Charth3 =styled.h3`
 	display: none;
@@ -130,12 +133,23 @@ const Charth3 =styled.h3`
 		font-size: 25px;
 		font-weight: bold;
 	}
+	@media all and (max-width: 768px){
+		text-align: end;
+	}
 `;
 const BarChartBox = styled.section`
     width: 90%;
     margin: 0 auto;
 	@media all and (max-width: 1280px){
 		width: 95%;
+	}
+	@media all and (max-width: 768px){
+		width: 100%;
+		position: relative;
+		left: 168px;
+	}
+	@media all and (max-width: 640px){
+		left: -30px;
 	}
 `;
 
@@ -144,6 +158,13 @@ const GraphHead = styled.section`
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 15px;
+	@media all and (max-width: 768px){
+		width: 135%;
+	}
+	@media all and (max-width: 640px){
+		flex-direction: row-reverse;
+		width: 100%;
+	}
 `;
 const GuestTop = styled.section`
 	display: flex;
@@ -195,5 +216,9 @@ const Fbox = styled.span`
 	margin-right: 5px;
 `;
 
-const Slide = styled.div``;
+const Slide = styled.div`
+	@media all and (max-width: 640px){
+		display: none;
+	}
+`;
 const Limg = styled.img``;
