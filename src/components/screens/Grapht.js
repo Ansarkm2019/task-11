@@ -125,6 +125,11 @@ const GraphContainer = styled.section`
 	@media all and (max-width: 640px){
 		width: 70%;
 	}
+	@media all and (max-width: 480px){
+		width: 100%;
+		content-visibility: auto;
+	}
+	
 `;
 const Charth3 =styled.h3`
 	display: none;
@@ -150,6 +155,9 @@ const BarChartBox = styled.section`
 	}
 	@media all and (max-width: 640px){
 		left: -30px;
+	}
+	@media all and (max-width: 480px){
+		left: -164px;
 	}
 `;
 

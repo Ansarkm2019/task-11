@@ -100,6 +100,10 @@ const Spotlight = styled.section`
     @media all and (max-width: 640px){
         width: 100%;
     }
+    @media all and (max-width: 480px){
+        margin-top: 25px;
+        padding-top: 30px;
+    }
 `;
 
 
