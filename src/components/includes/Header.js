@@ -113,6 +113,9 @@ const HeaderTag = styled.header`
         margin-left: 100px;
         margin-right: 15px;
     }
+    @media all and (max-width: 360px){
+        margin-left: 55px;
+    }
 `;
 const LogoContainer = styled.h1``;
 const LogoA = styled.a``;

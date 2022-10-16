@@ -127,6 +127,10 @@ const MaleGuestBox = styled.section`
     @media all and (max-width: 768px){
         width: 90%;
     }
+    @media all and (max-width: 360px){
+        padding: 10px;
+        width: 96%;
+    }
 `;
 const MaleGuest = styled.section`
     display: flex;
@@ -138,6 +142,9 @@ const Mspan = styled.span`
     display: inline-block;
     border-radius: 30px;
     margin-right: 20px;
+    @media all and (max-width: 360px){
+        margin-right: 10px;
+    }
 
 `;
 const Mimg = styled.img``;
@@ -188,6 +195,10 @@ const FemaleGuestBox = styled.section`
     @media all and (max-width: 768px){
         width: 90%;
     }
+    @media all and (max-width: 360px){
+        width: 96%;
+        padding: 10px;
+    }
 `;
 const FemaleGuest = styled.section`
     display: flex;
@@ -199,6 +210,9 @@ const Fspan = styled.span`
     display: inline-block;
     border-radius: 30px;
     margin-right: 20px;
+    @media all and (max-width: 360px){
+        margin-right: 10px;
+    }
 
 `;
 const Fimg = styled.img``;
@@ -229,6 +243,9 @@ const Traffic = styled.section`
     border-radius: 20px;
     @media all and (max-width: 768px){
         width: 50%;
+    }
+    @media all and (max-width: 360px){
+        width: 70%;
     }
 `;
 const TrafficH4 = styled.h4`
@@ -262,6 +279,9 @@ const MoreRight = styled.div`
     align-items: center;
     @media all and (max-width: 1080px){
         width: 40%;
+    }
+    @media all and (max-width: 480px){
+        width: 70%;
     }
 `;
 const MoreLeft = styled.div`

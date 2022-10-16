@@ -159,6 +159,9 @@ const BarChartBox = styled.section`
 	@media all and (max-width: 480px){
 		left: -164px;
 	}
+	@media all and (max-width: 360px){
+		left: -100px;
+	}
 `;
 
 const GraphHead = styled.section`

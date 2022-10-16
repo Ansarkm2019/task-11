@@ -161,6 +161,10 @@ const GuestRight = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-right: 15px;
+    @media all and (max-width: 360px){
+        position: relative;
+        right: 30px;
+    }
 `;
 const EditSpan = styled.span`
     margin-right: 10px;
@@ -169,6 +173,9 @@ const EditSpan = styled.span`
     }
     @media all and (max-width: 1080px){
         display: block;
+    }
+    @media all and (max-width: 360px){
+        width: 20px;
     }
 `;
 const Editimg = styled.img`
@@ -183,6 +190,9 @@ const DeleteSpan = styled.span`
     @media all and (max-width: 1080px){
         display: block;
     }
+    @media all and (max-width: 360px){
+        width: 20px;
+    }
 `;
 const DeleteImg = styled.img`
     width: 100%;
@@ -192,6 +202,9 @@ const DotsSpan = styled.span`
     margin-right: 10px;
     @media all and (max-width: 1380px){
         width: 30px;
+    }
+    @media all and (max-width: 360px){
+        width: 20px;
     }
 `;
 const DotsImg = styled.img`
