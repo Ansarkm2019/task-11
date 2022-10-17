@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../includes/Header";
 
-function Nomactch() {
+function Soon() {
 	return (
 		<>
 			<Container>
 				<Header />
 				<Noicon>
 					<NoImage
-						src={require("../../assets/images/notfound.png")}
+						src={require("../../assets/images/soon.jpg")}
 					/>
 				</Noicon>
 			</Container>
@@ -17,7 +17,7 @@ function Nomactch() {
 	);
 }
 
-export default Nomactch;
+export default Soon;
 
 const NoImage = styled.img`
 	width: 100%;
