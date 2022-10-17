@@ -136,7 +136,7 @@ function Header() {
 									}
 								/>
 							</Micon>
-							<MenuH6>Gifts</MenuH6>
+							<MenuH6 to="/soon">Gifts</MenuH6>
 						</MenuLi>
 					</MenuUl>
 				</SideBox>
@@ -153,7 +153,9 @@ function Header() {
 									}
 								/>
 							</Sicon>
-							<SettingsH6>Account</SettingsH6>
+							<SettingsH6 to="/Notavailable">
+								Account
+							</SettingsH6>
 						</SettingsLi>
 						<SettingsLi>
 							<Sicon>
@@ -164,7 +166,9 @@ function Header() {
 									}
 								/>
 							</Sicon>
-							<SettingsH6>Wallet</SettingsH6>
+							<SettingsH6 to="/Notavailable">
+								Wallet
+							</SettingsH6>
 						</SettingsLi>
 						<SettingsLi>
 							<Sicon>
@@ -175,7 +179,9 @@ function Header() {
 									}
 								/>
 							</Sicon>
-							<SettingsH6>Help & Support</SettingsH6>
+							<SettingsH6 to="/Notavailable">
+								Help & Support
+							</SettingsH6>
 						</SettingsLi>
 					</SettingsUl>
 				</SideBox2>
@@ -379,7 +385,7 @@ const SettingsImage = styled.img`
 	width: 100%;
 	display: block;
 `;
-const SettingsH6 = styled.h6`
+const SettingsH6 = styled(NavLink)`
 	margin: 0;
 	font-size: 15px;
 	&:hover {

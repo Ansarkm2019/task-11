@@ -9,6 +9,7 @@ import Graphpage from "./components/Pages/Graphpage";
 import Guestpagelist from "./components/Pages/Guestpagelist";
 import Nomactch from "./components/screens/Nomactch";
 import Soon from "./components/screens/Soon";
+import Notavailable from "./components/Pages/Notavailable";
 
 function App() {
 	return (
@@ -22,6 +23,10 @@ function App() {
 						element={<Guestpagelist />}
 					/>
 					<Route path="/soon" element={<Soon />} />
+					<Route
+						path="/Notavailable"
+						element={<Notavailable />}
+					/>
 					<Route path="*" element={<Nomactch />} />
 				</Routes>
 			</Router>
