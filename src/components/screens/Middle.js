@@ -110,16 +110,22 @@ const Spotlight = styled.section`
 const TopCantainer = styled.section`
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    @media all and (max-width: 1080px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 const MaleGuestBox = styled.section`
-    width: 65%;
+    width: 40%;
     background-color: #A5E3E3;
     padding: 20px;
     border-radius: 20px;
     @media all and (max-width: 1080px){
         margin-bottom: 20px;
+        width: 65%;
+    }
+    @media all and (max-width: 980px){
+        width: 85%;
     }
     @media all and (max-width: 768px){
         width: 80%;
@@ -182,12 +188,16 @@ const TotalComeM = styled.h5`
 
 
 const FemaleGuestBox = styled.section`
-    width: 65%;
+    width: 40%;
     background-color: #D2A2F7;
     padding: 20px;
     border-radius: 20px;
     @media all and (max-width: 1080px){
         margin-bottom: 20px;
+        width: 65%;
+    }
+    @media all and (max-width: 980px){
+        width: 85%;
     }
     @media all and (max-width: 768px){
         width: 80%;
@@ -239,8 +249,19 @@ const TotalComeF = styled.h5`
 
 const Traffic = styled.section`
     background-color: #fff;
-    width: 35%;
+    width: 13%;
     border-radius: 20px;
+    @media all and (max-width: 1380px){
+        width: 15%;
+    }
+    @media all and (max-width: 1080px){
+        width: 35%;
+    }
+    
+    @media all and (max-width: 980px){
+        width: 45%;
+    }
+    
     @media all and (max-width: 768px){
         width: 50%;
     }

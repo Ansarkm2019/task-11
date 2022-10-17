@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Graphpage from './components/Pages/Graphpage';
 import Guestpagelist from './components/Pages/Guestpagelist';
+import Nomactch from './components/screens/Nomactch';
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
       <Routes>
         <Route path="/guestlist" element={<Guestpagelist />}/>
       </Routes>
-    
+      <Routes>
+        <Route path="*" element={<Nomactch />}/>
+      </Routes>
     </Router>
       
     </>

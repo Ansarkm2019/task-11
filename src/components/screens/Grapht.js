@@ -151,16 +151,16 @@ const BarChartBox = styled.section`
 	@media all and (max-width: 768px){
 		width: 100%;
 		position: relative;
-		left: 168px;
+		left: -105px;
 	}
 	@media all and (max-width: 640px){
-		left: -30px;
+		left: 30px;
 	}
 	@media all and (max-width: 480px){
-		left: -164px;
+		left: -20px;
 	}
 	@media all and (max-width: 360px){
-		left: -100px;
+		left: -163px;
 	}
 `;
 
