@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
+
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Logo href="">
-        Eli<span>Codes</span>
-      </Logo>
+
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="">Our Work</MenuLink>
-        <MenuLink href="">About</MenuLink>
-        <MenuLink href="">Careers</MenuLink>
+        <MenuLink to="/" >Dashboard</MenuLink>
+        <MenuLink to="/graph" >Guest traffic</MenuLink>
+        <MenuLink to="/guestlist" >Guestlist</MenuLink>
         <MenuLink href="">Contact</MenuLink>
       </Menu>
     </Nav>
@@ -25,14 +26,15 @@ const Navbar = () => {
 
 export default Navbar;
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #67bc98;
+  color: #000;
   transition: all 0.3s ease-in;
   font-size: 0.9rem;
+  font-weight: bold;
 
   &:hover {
     color: #7b7fda;
@@ -40,7 +42,8 @@ const MenuLink = styled.a`
 `;
 
 const Nav = styled.div`
-  padding: 0 2rem;
+  padding-top: 85px;
+  padding-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,19 +53,7 @@ const Nav = styled.div`
   top: 0;
   left: 0;
   right: 0;
-`;
-
-const Logo = styled.a`
-  padding: 1rem 0;
-  color: #7b7fda;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 1.7rem;
-
-  span {
-    font-weight: 300;
-    font-size: 1.3rem;
-  }
+  width: fit-content;
 `;
 
 const Menu = styled.div`
@@ -87,9 +78,9 @@ const Hamburger = styled.div`
   cursor: pointer;
 
   span {
-    height: 2px;
+    height: 3px;
     width: 25px;
-    background: #7b7fda;
+    background: #000;
     margin-bottom: 4px;
     border-radius: 5px;
   }

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 function Header() {
@@ -35,7 +36,8 @@ function Header() {
                 </RightDiv>
 
                 <Burger>
-                    <Burgerimg src={require("../../assets/images/icon-menu.png")} />
+                    <Navbar />
+                    {/* <Burgerimg src={require("../../assets/images/icon-menu.png")} /> */}
                 </Burger>
             </TopCantainer>
         </HeaderTag>
@@ -60,7 +62,7 @@ function Header() {
                         <Micon>
                             <MenuImage src={require("../../assets/images/bx_bar_chart_square.svg").default} />
                         </Micon>
-                        <MenuH6>Guest traffic</MenuH6>
+                        <MenuH6 to="/graph" >Guest traffic</MenuH6>
                     </MenuLi>
                     <MenuLi>
                         <Micon>
@@ -112,6 +114,7 @@ const HeaderTag = styled.header`
     @media all and (max-width: 640px){
         margin-left: 100px;
         margin-right: 15px;
+        justify-content: end;
     }
     @media all and (max-width: 360px){
         margin-left: 55px;
@@ -203,17 +206,17 @@ const Span2img = styled.img`
     border-radius: 30px;
 `;
 
-const Burger = styled.span`
+const Burger = styled.div`
     display: none;
     width: 35px;
     @media all and (max-width: 640px){
         display: block;
     }
 `;
-const Burgerimg = styled.img`
-    width: 100%;
-    display: block;
-`;
+// const Burgerimg = styled.img`
+//     width: 100%;
+//     display: block;
+// `;
 
 
 const SideContainer = styled.section`
